@@ -1,0 +1,186 @@
+body {
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+ul li {
+    list-style: none;
+    display: inline;
+    font-size: 13px;
+}
+ul li:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-nav {
+    display: none;
+}
+.left-nav ul li{
+    margin: 0.8em;
+}
+.right-nav ul li{
+ margin: 0.8em;
+}
+ main {
+    display: flex;
+    margin:auto;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#googlelogo{
+    width: 40%;
+    margin:auto;
+}
+.buttons-container{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.buttons-container input:hover{
+    cursor: pointer;
+    border: 1px solid rgb(182, 177, 177);
+}
+    
+.googlebuttons{
+    margin: auto 10px;
+    width: 150px;
+    height: 40px;
+    border: transparent;
+    border-radius: 2mm;
+    background-color: rgb(248, 244, 242);
+}
+
+#searchbar {
+    height: 36px;
+    background-color:transparent;
+    border:1px solid #f8f9fa;
+    justify-content: center;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/534px-Google_mic.svg.png"), url("https://icon-library.com/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg");
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: right center, left center;
+    background-position-x: 98% , 2%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#searchbar:hover{
+    box-shadow: 0 0 10px rgb(177, 174, 174);
+}
+#searchbar:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(119, 116, 116);
+}
+
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: rgb(250, 248, 243);
+    margin-top: auto;
+    margin-left: -10px;
+
+}
+
+.footer-left ul li {
+    margin: auto 1em;
+}
+.footer-right ul li {
+    margin: auto 1em;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+button {
+    background-color: #1a73e8;
+    font-size: 14px;
+    width: 100px;
+    color:white;
+    padding: 10px;
+    border-radius: 1mm;
+    border-color: transparent;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #5190e2;
+}
+
+@media (max-width: 700px) {
+    main {
+      width: 65%;
+      height: 65%;
+    }
+
+    footer{
+        width: 100%;
+    }
+    .left-nav{
+        display: none;
+    }
+    .right-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+    }
+    .mobile-nav ul {
+        justify-content: center;
+        margin:auto;
+        width: 100%;
+    }
+    .mobile-nav ul li {
+        margin: 0px 15px;
+    }
+
+    #searchbar {
+        width: 80%;
+    }
+    .footer-left {
+        display: none;
+    }
+    .footer-right {
+        display: none;
+    }
+    .footer-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-mobile ul {
+        justify-content: center;
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .footer-mobile ul li {
+        margin: 5px 10px;
+        justify-content: space-between;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .mobile-nav ul li {
+        margin: 0px 10px;
+    }
+    .footer-mobile ul li {
+        margin: 5px 5px;
+        justify-content: space-between;
+    }
+}
