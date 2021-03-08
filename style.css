@@ -184,3 +184,23 @@ button:hover {
         justify-content: space-between;
     }
 }
+
+@media (max-width: 380px) {
+    
+   .no-mobile {
+       display: none;
+      background-color: blue;
+        color:red;
+    }
+    
+    .mobile-nav ul li {
+        margin: 0px 10px;
+    }
+    footer {
+        margin-right: -50px;
+    }
+    .footer-mobile ul li {
+        margin: 5px 5px;
+        justify-content: space-between;
+    }
+}
